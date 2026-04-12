@@ -1,5 +1,5 @@
 {
-  "name": "lemon-vitepress-theme",
+  "name": "@lemondouble/lemon-vitepress-theme",
   "version": "0.1.0",
   "description": "VitePress theme with LemonDouble Design System — warm dark, Galmuri11 headings, Pretendard body",
   "type": "module",
