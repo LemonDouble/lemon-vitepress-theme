@@ -1,0 +1,172 @@
+/*
+ * LemonDouble Design System — VitePress CSS Variable Overrides
+ *
+ * Dark-only theme. Use with `appearance: 'force-dark'` in VitePress config.
+ * Colors extracted from brand logo: Golden Yellow (#F0B90B) + Coral Red (#CD6B5E)
+ * on warm dark background (#12100E).
+ */
+
+/* ----------------------------------------------------------------
+ * Override :root so the theme looks correct even before .dark loads
+ * ---------------------------------------------------------------- */
+:root {
+  --vp-c-brand-1: #F0B90B;
+  --vp-c-brand-2: #D4A30A;
+  --vp-c-brand-3: #F0B90B;
+  --vp-c-brand-soft: rgba(240, 185, 11, 0.12);
+
+  --vp-font-family-base: 'Pretendard', -apple-system, BlinkMacSystemFont, sans-serif;
+  --vp-font-family-mono: 'Pretendard', ui-monospace, 'Menlo', 'Monaco', 'Consolas', monospace;
+}
+
+/* ----------------------------------------------------------------
+ * .dark — primary target (VitePress adds this class in dark mode)
+ * ---------------------------------------------------------------- */
+.dark {
+  /* --- Brand --- */
+  --vp-c-brand-1: #F0B90B;
+  --vp-c-brand-2: #D4A30A;
+  --vp-c-brand-3: #F0B90B;
+  --vp-c-brand-soft: rgba(240, 185, 11, 0.12);
+
+  /* --- Neutral --- */
+  --vp-c-neutral: #F5F0EB;
+  --vp-c-neutral-inverse: #12100E;
+
+  /* --- Background --- */
+  --vp-c-bg: #12100E;
+  --vp-c-bg-alt: #1C1816;
+  --vp-c-bg-elv: #1C1816;
+  --vp-c-bg-soft: #1C1816;
+
+  /* --- Border / Divider --- */
+  --vp-c-border: #2E2723;
+  --vp-c-divider: #2E2723;
+  --vp-c-gutter: #2E2723;
+
+  /* --- Text --- */
+  --vp-c-text-1: #F5F0EB;
+  --vp-c-text-2: #A89E95;
+  --vp-c-text-3: #5C524A;
+
+  /* --- Default (Gray) --- */
+  --vp-c-default-1: #2E2723;
+  --vp-c-default-2: #3D3530;
+  --vp-c-default-3: #231E1B;
+  --vp-c-default-soft: rgba(46, 39, 35, 0.5);
+
+  /* --- Tip / Note (Brand Yellow) --- */
+  --vp-c-tip-1: #F0B90B;
+  --vp-c-tip-2: #D4A30A;
+  --vp-c-tip-3: #F0B90B;
+  --vp-c-tip-soft: rgba(240, 185, 11, 0.12);
+
+  --vp-c-note-1: #F0B90B;
+  --vp-c-note-2: #D4A30A;
+  --vp-c-note-3: #F0B90B;
+  --vp-c-note-soft: rgba(240, 185, 11, 0.12);
+
+  /* --- Success (Green) --- */
+  --vp-c-success-1: #4ADE80;
+  --vp-c-success-2: #3CC770;
+  --vp-c-success-3: #4ADE80;
+  --vp-c-success-soft: rgba(74, 222, 128, 0.12);
+
+  /* --- Important (Coral) --- */
+  --vp-c-important-1: #CD6B5E;
+  --vp-c-important-2: #B85D51;
+  --vp-c-important-3: #CD6B5E;
+  --vp-c-important-soft: rgba(205, 107, 94, 0.12);
+
+  /* --- Warning (Yellow) --- */
+  --vp-c-warning-1: #FACC15;
+  --vp-c-warning-2: #E0B813;
+  --vp-c-warning-3: #FACC15;
+  --vp-c-warning-soft: rgba(250, 204, 21, 0.12);
+
+  /* --- Danger / Caution (Red) --- */
+  --vp-c-danger-1: #EF4444;
+  --vp-c-danger-2: #D63B3B;
+  --vp-c-danger-3: #EF4444;
+  --vp-c-danger-soft: rgba(239, 68, 68, 0.12);
+
+  --vp-c-caution-1: #EF4444;
+  --vp-c-caution-2: #D63B3B;
+  --vp-c-caution-3: #EF4444;
+  --vp-c-caution-soft: rgba(239, 68, 68, 0.12);
+
+  /* --- Font --- */
+  --vp-font-family-base: 'Pretendard', -apple-system, BlinkMacSystemFont, sans-serif;
+  --vp-font-family-mono: 'Pretendard', ui-monospace, 'Menlo', 'Monaco', 'Consolas', monospace;
+
+  /* --- Code --- */
+  --vp-code-color: #CD6B5E;
+  --vp-code-bg: #1C1816;
+  --vp-code-block-color: #A89E95;
+  --vp-code-block-bg: #1C1816;
+  --vp-code-block-divider-color: #2E2723;
+  --vp-code-line-number-color: #5C524A;
+  --vp-code-line-highlight-color: rgba(240, 185, 11, 0.06);
+  --vp-code-copy-code-border-color: #2E2723;
+  --vp-code-copy-code-bg: #231E1B;
+  --vp-code-copy-code-hover-bg: #1C1816;
+  --vp-code-tab-divider: #2E2723;
+  --vp-code-tab-text-color: #A89E95;
+  --vp-code-tab-bg: #1C1816;
+  --vp-code-tab-active-bar-color: #F0B90B;
+
+  /* --- Button: Brand --- */
+  --vp-button-brand-border: transparent;
+  --vp-button-brand-text: #12100E;
+  --vp-button-brand-bg: #F0B90B;
+  --vp-button-brand-hover-border: transparent;
+  --vp-button-brand-hover-text: #12100E;
+  --vp-button-brand-hover-bg: #D4A30A;
+  --vp-button-brand-active-border: transparent;
+  --vp-button-brand-active-text: #12100E;
+  --vp-button-brand-active-bg: #B8900A;
+
+  /* --- Button: Alt (Ghost) --- */
+  --vp-button-alt-border: #2E2723;
+  --vp-button-alt-text: #A89E95;
+  --vp-button-alt-bg: #1C1816;
+  --vp-button-alt-hover-border: #3D3530;
+  --vp-button-alt-hover-text: #F5F0EB;
+  --vp-button-alt-hover-bg: #231E1B;
+
+  /* --- Nav --- */
+  --vp-nav-height: 56px;
+
+  /* --- Sidebar --- */
+  --vp-sidebar-width: 240px;
+
+  /* --- Badge --- */
+  --vp-badge-info-border: #2E2723;
+  --vp-badge-info-text: #A89E95;
+  --vp-badge-info-bg: rgba(46, 39, 35, 0.5);
+  --vp-badge-tip-border: rgba(240, 185, 11, 0.25);
+  --vp-badge-tip-text: #F0B90B;
+  --vp-badge-tip-bg: rgba(240, 185, 11, 0.12);
+  --vp-badge-warning-border: rgba(250, 204, 21, 0.25);
+  --vp-badge-warning-text: #FACC15;
+  --vp-badge-warning-bg: rgba(250, 204, 21, 0.12);
+  --vp-badge-danger-border: rgba(239, 68, 68, 0.25);
+  --vp-badge-danger-text: #EF4444;
+  --vp-badge-danger-bg: rgba(239, 68, 68, 0.12);
+
+  /* --- Custom Blocks --- */
+  --vp-custom-block-tip-bg: rgba(240, 185, 11, 0.06);
+  --vp-custom-block-tip-code-bg: #1C1816;
+  --vp-custom-block-note-bg: rgba(240, 185, 11, 0.06);
+  --vp-custom-block-note-code-bg: #1C1816;
+  --vp-custom-block-warning-bg: rgba(250, 204, 21, 0.06);
+  --vp-custom-block-warning-code-bg: #1C1816;
+  --vp-custom-block-danger-bg: rgba(239, 68, 68, 0.06);
+  --vp-custom-block-danger-code-bg: #1C1816;
+  --vp-custom-block-important-bg: rgba(205, 107, 94, 0.06);
+  --vp-custom-block-important-code-bg: #1C1816;
+  --vp-custom-block-caution-bg: rgba(239, 68, 68, 0.06);
+  --vp-custom-block-caution-code-bg: #1C1816;
+  --vp-custom-block-info-bg: rgba(46, 39, 35, 0.3);
+  --vp-custom-block-info-code-bg: #1C1816;
+}

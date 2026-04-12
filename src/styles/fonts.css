@@ -1,0 +1,5 @@
+/* Galmuri11 — headings, tabs, section labels (Bold 700 only) */
+@import url('https://cdn.jsdelivr.net/npm/galmuri/dist/galmuri.css');
+
+/* Pretendard — body, buttons, tags, code, everything else */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/pretendard/1.3.9/static/pretendard.min.css');

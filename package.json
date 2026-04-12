@@ -1,0 +1,39 @@
+{
+  "name": "lemon-vitepress-theme",
+  "version": "0.1.0",
+  "description": "VitePress theme with LemonDouble Design System — warm dark, Galmuri11 headings, Pretendard body",
+  "type": "module",
+  "main": "src/index.js",
+  "exports": {
+    ".": "./src/index.js",
+    "./styles/*": "./src/styles/*"
+  },
+  "files": [
+    "src"
+  ],
+  "scripts": {
+    "dev": "vitepress dev demo",
+    "build": "vitepress build demo",
+    "preview": "vitepress preview demo"
+  },
+  "peerDependencies": {
+    "vitepress": ">=1.0.0"
+  },
+  "devDependencies": {
+    "vitepress": "^2.0.0-alpha.17",
+    "vue": "^3.5.13"
+  },
+  "keywords": [
+    "vitepress",
+    "theme",
+    "dark-mode",
+    "documentation",
+    "lemon"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/LemonDouble/lemon-vitepress-theme.git"
+  },
+  "author": "LemonDouble"
+}
