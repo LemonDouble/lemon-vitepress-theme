@@ -35,5 +35,6 @@
     "type": "git",
     "url": "https://github.com/LemonDouble/lemon-vitepress-theme.git"
   },
-  "author": "LemonDouble"
+  "author": "LemonDouble",
+  "packageManager": "pnpm@10.25.0"
 }
