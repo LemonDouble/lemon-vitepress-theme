@@ -1,8 +1,8 @@
-# lemon-vitepress-theme
+# @lemondouble/lemon-vitepress-theme
 
 [LemonDouble 디자인 시스템](https://github.com/LemonDouble/lemon-design-system)이 적용된 VitePress 테마 패키지.
 
-설치하고 import하면 끝. 어떤 VitePress 프로젝트든 2줄이면 적용됩니다.
+VitePress 기본 테마를 확장한 구조라, 설치 후 import만 하면 바로 테마가 적용됩니다.
 
 **[데모 사이트](https://lemondouble.github.io/lemon-vitepress-theme/)**
 
@@ -17,30 +17,97 @@
 ## 설치
 
 ```bash
-npm install lemon-vitepress-theme
+# npm
+npm install -D @lemondouble/lemon-vitepress-theme vitepress
+
+# pnpm
+pnpm add -D @lemondouble/lemon-vitepress-theme vitepress
+
+# yarn
+yarn add -D @lemondouble/lemon-vitepress-theme vitepress
 ```
+
+> `vitepress`는 peer dependency입니다. (>=1.0.0)
 
 ## 사용법
 
-### 1. 테마 설정
+### 1. 테마 등록
+
+VitePress 프로젝트의 `.vitepress/theme/index.ts` (또는 `.js`) 파일에 테마를 import 해서 export 하세요. 파일이 없으면 새로 생성하면 됩니다.
 
 ```ts
 // .vitepress/theme/index.ts
-import LemonTheme from 'lemon-vitepress-theme'
+import LemonTheme from '@lemondouble/lemon-vitepress-theme'
 
 export default LemonTheme
 ```
 
-### 2. VitePress 설정
+### 2. 다크 모드 강제 적용
+
+이 테마는 다크 모드 전용입니다. `.vitepress/config.ts`에서 `appearance`를 `'force-dark'`로 설정하세요.
 
 ```ts
 // .vitepress/config.ts
 import { defineConfig } from 'vitepress'
 
 export default defineConfig({
+  title: 'My Site',
+  description: 'My VitePress site',
   appearance: 'force-dark',
-  // ... 나머지 설정
+
+  themeConfig: {
+    // VitePress 기본 themeConfig 그대로 사용 가능
+    nav: [
+      { text: 'Home', link: '/' },
+      { text: 'Guide', link: '/guide/' },
+    ],
+    sidebar: [
+      {
+        text: 'Introduction',
+        items: [
+          { text: 'Getting Started', link: '/guide/getting-started' },
+        ],
+      },
+    ],
+  },
 })
+```
+
+### 3. 테마 확장하기 (선택)
+
+기본 테마 위에 커스텀 컴포넌트를 enhanceApp으로 추가하고 싶다면:
+
+```ts
+// .vitepress/theme/index.ts
+import LemonTheme from '@lemondouble/lemon-vitepress-theme'
+import MyComponent from './components/MyComponent.vue'
+import type { Theme } from 'vitepress'
+
+export default {
+  extends: LemonTheme,
+  enhanceApp({ app }) {
+    app.component('MyComponent', MyComponent)
+  },
+} satisfies Theme
+```
+
+### 4. CSS 변수 오버라이드 (선택)
+
+특정 CSS 변수만 커스터마이징하고 싶다면 별도 CSS 파일을 만들어서 import 하세요.
+
+```ts
+// .vitepress/theme/index.ts
+import LemonTheme from '@lemondouble/lemon-vitepress-theme'
+import './custom.css'
+
+export default LemonTheme
+```
+
+```css
+/* .vitepress/theme/custom.css */
+:root {
+  --vp-c-brand-1: #your-color;
+}
 ```
 
 ## 포함 항목
@@ -52,6 +119,20 @@ export default defineConfig({
 | 컴포넌트 | 버튼, 뱃지, 코드 블록, 커스텀 블록, 테이블, 인용문 |
 | 네비게이션 | 56px 글래스 이펙트 네비바 |
 | 스크롤바 | 따뜻한 다크 톤 커스텀 스크롤바 |
+
+## 폰트 정보
+
+테마에 포함된 웹폰트:
+
+- **Galmuri11 Bold** — [Quiple](https://quiple.dev/galmuri/)의 8-bit 레트로 한글 비트맵 폰트 (헤딩용)
+- **Pretendard** — [orioncactus/pretendard](https://github.com/orioncactus/pretendard)의 산세리프 한글 폰트 (본문용)
+
+폰트는 패키지에 포함되어 별도 설정 없이 자동 로딩됩니다.
+
+## 요구사항
+
+- Node.js >= 18
+- VitePress >= 1.0.0
 
 ## 라이선스
 
