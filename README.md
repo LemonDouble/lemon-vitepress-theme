@@ -73,43 +73,6 @@ export default defineConfig({
 })
 ```
 
-### 3. 테마 확장하기 (선택)
-
-기본 테마 위에 커스텀 컴포넌트를 enhanceApp으로 추가하고 싶다면:
-
-```ts
-// .vitepress/theme/index.ts
-import LemonTheme from '@lemondouble/lemon-vitepress-theme'
-import MyComponent from './components/MyComponent.vue'
-import type { Theme } from 'vitepress'
-
-export default {
-  extends: LemonTheme,
-  enhanceApp({ app }) {
-    app.component('MyComponent', MyComponent)
-  },
-} satisfies Theme
-```
-
-### 4. CSS 변수 오버라이드 (선택)
-
-특정 CSS 변수만 커스터마이징하고 싶다면 별도 CSS 파일을 만들어서 import 하세요.
-
-```ts
-// .vitepress/theme/index.ts
-import LemonTheme from '@lemondouble/lemon-vitepress-theme'
-import './custom.css'
-
-export default LemonTheme
-```
-
-```css
-/* .vitepress/theme/custom.css */
-:root {
-  --vp-c-brand-1: #your-color;
-}
-```
-
 ## 포함 항목
 
 | 항목 | 설명 |
