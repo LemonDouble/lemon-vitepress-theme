@@ -4,6 +4,7 @@ export default defineConfig({
   title: 'Lemon Theme Demo',
   description: 'VitePress theme with LemonDouble Design System',
   appearance: 'force-dark',
+  base: '/lemon-vitepress-theme/',
 
   locales: {
     root: {
