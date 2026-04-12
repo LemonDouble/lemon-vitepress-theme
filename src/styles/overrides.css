@@ -236,13 +236,11 @@
 }
 
 /* ================================================================
- * Hero gradient text — brand colors
+ * Hero title text — brand color
  * ================================================================ */
 
 .VPHero .clip {
-  background: linear-gradient(135deg, #F0B90B 0%, #CD6B5E 100%) !important;
-  -webkit-background-clip: text !important;
-  -webkit-text-fill-color: transparent !important;
+  color: #F0B90B !important;
 }
 
 /* ================================================================

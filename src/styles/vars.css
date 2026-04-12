@@ -141,9 +141,9 @@
   --vp-sidebar-width: 240px;
 
   /* --- Badge --- */
-  --vp-badge-info-border: #2E2723;
-  --vp-badge-info-text: #A89E95;
-  --vp-badge-info-bg: rgba(46, 39, 35, 0.5);
+  --vp-badge-info-border: rgba(96, 165, 250, 0.25);
+  --vp-badge-info-text: #60A5FA;
+  --vp-badge-info-bg: rgba(96, 165, 250, 0.12);
   --vp-badge-tip-border: rgba(240, 185, 11, 0.25);
   --vp-badge-tip-text: #F0B90B;
   --vp-badge-tip-bg: rgba(240, 185, 11, 0.12);
@@ -167,6 +167,6 @@
   --vp-custom-block-important-code-bg: #1C1816;
   --vp-custom-block-caution-bg: rgba(239, 68, 68, 0.06);
   --vp-custom-block-caution-code-bg: #1C1816;
-  --vp-custom-block-info-bg: rgba(46, 39, 35, 0.3);
+  --vp-custom-block-info-bg: rgba(96, 165, 250, 0.06);
   --vp-custom-block-info-code-bg: #1C1816;
 }
