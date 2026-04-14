@@ -162,7 +162,24 @@
 
 /* ================================================================
  * Table — warm dark styling
+ *
+ * 짧은 표는 본문 폭을 채우고, 넓은 표는 래퍼 안에서만 가로 스크롤되도록
+ * 런타임에 .table-wrapper 로 감싼다 (src/index.js 참고).
  * ================================================================ */
+
+.vp-doc .table-wrapper {
+  width: 100%;
+  overflow-x: auto;
+  margin: 16px 0;
+  border-radius: 12px;
+}
+
+.vp-doc .table-wrapper table {
+  display: table;
+  width: 100%;
+  min-width: 480px;
+  margin: 0;
+}
 
 .vp-doc table {
   border: 1px solid #2E2723;
