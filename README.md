@@ -73,6 +73,23 @@ export default defineConfig({
 })
 ```
 
+### 3. (선택) 디자인 시스템 favicon 적용
+
+LemonDouble 디자인 시스템에 포함된 favicon을 테마에서 제공하는 head 프리셋으로 적용할 수 있습니다. jsdelivr CDN으로 로드되어 별도 파일 복사가 필요하지 않습니다.
+
+```ts
+// .vitepress/config.ts
+import { defineConfig } from 'vitepress'
+import { lemonHead } from '@lemondouble/lemon-vitepress-theme/head'
+
+export default defineConfig({
+  title: 'My Site',
+  appearance: 'force-dark',
+  head: [...lemonHead],
+  // ...
+})
+```
+
 ## 포함 항목
 
 | 항목 | 설명 |

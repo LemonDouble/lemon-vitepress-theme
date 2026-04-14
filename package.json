@@ -1,11 +1,12 @@
 {
   "name": "@lemondouble/lemon-vitepress-theme",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "VitePress theme with LemonDouble Design System — warm dark, Galmuri11 headings, Pretendard body",
   "type": "module",
   "main": "src/index.js",
   "exports": {
     ".": "./src/index.js",
+    "./head": "./src/head.js",
     "./styles/*": "./src/styles/*"
   },
   "files": [

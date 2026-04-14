@@ -1,10 +1,12 @@
 import { defineConfig } from 'vitepress'
+import { lemonHead } from '../../src/head.js'
 
 export default defineConfig({
   title: 'Lemon Theme Demo',
   description: 'VitePress theme with LemonDouble Design System',
   appearance: 'force-dark',
   base: '/lemon-vitepress-theme/',
+  head: [...lemonHead],
 
   locales: {
     root: {
