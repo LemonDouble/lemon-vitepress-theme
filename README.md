@@ -107,7 +107,7 @@ export default defineConfig({
 - **Galmuri11 Bold** — [Quiple](https://quiple.dev/galmuri/)의 8-bit 레트로 한글 비트맵 폰트 (헤딩용)
 - **Pretendard** — [orioncactus/pretendard](https://github.com/orioncactus/pretendard)의 산세리프 한글 폰트 (본문용)
 
-폰트는 패키지에 포함되어 별도 설정 없이 자동 로딩됩니다.
+폰트는 jsdelivr / cdnjs CDN을 통해 자동 로드되므로 별도 설정이 필요 없습니다.
 
 ## 요구사항
 
