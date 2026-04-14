@@ -18,13 +18,9 @@ jobs:
 
       - uses: actions/setup-node@v4
         with:
-          node-version: 22
+          node-version: 24
           cache: pnpm
           registry-url: https://registry.npmjs.org
-
-      # Trusted Publishing(OIDC)은 npm CLI >= 11.5.1 필요.
-      # setup-node 번들 npm이 구버전이라 최신으로 업그레이드.
-      - run: npm install -g npm@latest
 
       - run: pnpm install --frozen-lockfile
 
