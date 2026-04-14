@@ -78,7 +78,7 @@
  * ================================================================ */
 
 .vp-doc :not(pre) > code {
-  font-family: 'Pretendard', ui-monospace, monospace;
+  font-family: 'D2 coding', ui-monospace, 'Menlo', 'Monaco', 'Consolas', monospace;
   font-size: 13px;
   font-weight: 600;
   color: #CD6B5E;
@@ -98,7 +98,7 @@
 }
 
 .vp-doc div[class*='language-'] code {
-  font-family: 'Pretendard', ui-monospace, 'Menlo', 'Monaco', 'Consolas', monospace;
+  font-family: 'D2 coding', ui-monospace, 'Menlo', 'Monaco', 'Consolas', monospace;
   font-size: 14px;
   line-height: 1.8;
   font-variant-numeric: tabular-nums;
