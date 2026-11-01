@@ -53,7 +53,7 @@ This is a danger block — uses semantic red.
 | Feature | Status | Notes |
 |---------|--------|-------|
 | Dark Mode | Active | Force-dark only |
-| Galmuri11 | Active | Headings, Bold 700 |
+| Galmuri11 | Active | Site title, hero, Bold 700 |
 | Pretendard | Active | Body, code, buttons |
 | Glass Nav | Active | blur(12px) backdrop |
 

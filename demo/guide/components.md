@@ -62,7 +62,7 @@ npm run docs:dev
 | 기능 | 상태 | 비고 |
 |------|------|------|
 | 다크 모드 | 활성 | Force-dark 전용 |
-| Galmuri11 | 활성 | 헤딩, Bold 700 |
+| Galmuri11 | 활성 | 사이트 이름, 히어로, Bold 700 |
 | Pretendard | 활성 | 본문, 코드, 버튼 |
 | 글래스 네비 | 활성 | blur(12px) 백드롭 |
 

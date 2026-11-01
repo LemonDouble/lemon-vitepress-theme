@@ -4,7 +4,7 @@ layout: home
 hero:
   name: "Lemon Theme"
   text: "VitePress 디자인 시스템"
-  tagline: Galmuri11 헤딩과 Pretendard 본문의 따뜻한 다크 테마
+  tagline: Galmuri11 브랜드 타이틀과 Pretendard 본문의 따뜻한 다크 테마
   actions:
     - theme: brand
       text: 시작하기
@@ -17,7 +17,7 @@ features:
   - title: 다크 모드 전용
     details: 로고에서 추출한 따뜻한 다크 배경 (#12100E). 순수 블랙 없음, 라이트 모드 없음.
   - title: 듀얼 폰트 시스템
-    details: Galmuri11 Bold로 8-bit 레트로 헤딩, Pretendard로 깔끔한 본문.
+    details: Galmuri11 Bold로 8-bit 레트로 사이트 이름, Pretendard로 읽기 쉬운 제목과 본문.
   - title: 브랜드 컬러
     details: 골든 옐로우 (#F0B90B) CTA/링크. 코랄 레드 (#CD6B5E) 보조 액센트.
   - title: 드롭인 테마

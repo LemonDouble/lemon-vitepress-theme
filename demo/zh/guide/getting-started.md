@@ -36,7 +36,7 @@ export default defineConfig({
 ## 包含功能
 
 - **颜色** — 品牌黄、珊瑚红、温暖深色背景、语义色彩
-- **字体** — Galmuri11 Bold标题、Pretendard正文/代码
+- **字体** — Galmuri11 Bold站点名称·Hero、Pretendard标题·正文
 - **组件** — 按钮、徽章、代码块、自定义块、表格样式
 - **导航** — 毛玻璃效果导航栏 (56px)
 

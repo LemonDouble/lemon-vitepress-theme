@@ -1,7 +1,7 @@
 /*
  * LemonDouble Design System — VitePress CSS Variable Overrides
  *
- * Dark-only theme. Use with `appearance: 'force-dark'` in VitePress config.
+ * Dark-only theme. The config preset (src/config.js) sets `appearance: 'force-dark'`.
  * Colors extracted from brand logo: Golden Yellow (#F0B90B) + Coral Red (#CD6B5E)
  * on warm dark background (#12100E).
  */
