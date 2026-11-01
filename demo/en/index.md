@@ -4,7 +4,7 @@ layout: home
 hero:
   name: "Lemon Theme"
   text: "VitePress Design System"
-  tagline: Warm dark theme with Galmuri11 headings and Pretendard body
+  tagline: Warm dark theme with a Galmuri11 brand title and Pretendard body
   actions:
     - theme: brand
       text: Get Started
@@ -17,7 +17,7 @@ features:
   - title: Dark Mode Only
     details: Warm dark background (#12100E) derived from brand logo. No pure black, no light mode.
   - title: Dual Font System
-    details: Galmuri11 Bold for headings (8-bit retro vibe), Pretendard for everything else.
+    details: Galmuri11 Bold for the site title (8-bit retro vibe), Pretendard for readable headings and body.
   - title: Brand Colors
     details: Golden Yellow (#F0B90B) for CTAs and links. Coral Red (#CD6B5E) for secondary accents.
   - title: Drop-in Theme

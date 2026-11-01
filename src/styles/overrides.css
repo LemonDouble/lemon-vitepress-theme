@@ -6,14 +6,15 @@
  */
 
 /* ================================================================
- * Typography — Galmuri11 Bold 700 for headings only
+ * Typography — 읽어야 하는 제목은 가독성을 위해 Pretendard 800 으로 쓰고,
+ * Galmuri11 은 사이트 이름과 히어로처럼 브랜드를 드러내는 자리에만 쓴다.
  * ================================================================ */
 
 .vp-doc h1,
 .vp-doc h2,
 .vp-doc h3 {
-  font-family: 'Galmuri11', monospace;
-  font-weight: 700;
+  font-family: var(--vp-font-family-base);
+  font-weight: 800;
 }
 
 .vp-doc h1 {
@@ -60,12 +61,12 @@
 }
 
 /* ================================================================
- * Sidebar — Galmuri11 for group titles
+ * Sidebar — group titles
  * ================================================================ */
 
 .VPSidebar .group .title {
-  font-family: 'Galmuri11', monospace;
-  font-weight: 700;
+  font-family: var(--vp-font-family-base);
+  font-weight: 800;
 }
 
 /* Active sidebar link highlight */
@@ -143,8 +144,8 @@
 }
 
 .vp-doc .custom-block .custom-block-title {
-  font-family: 'Galmuri11', monospace;
-  font-weight: 700;
+  font-family: var(--vp-font-family-base);
+  font-weight: 800;
   font-size: 14px;
 }
 
@@ -277,4 +278,131 @@
 .vp-doc ul > li::marker,
 .vp-doc ol > li::marker {
   color: #F0B90B;
+}
+
+/* ================================================================
+ * Images — 누르면 새 탭에서 원본을 연다 (src/index.js 참고)
+ * ================================================================ */
+
+.vp-doc img {
+  border: 1px solid var(--vp-c-border);
+  border-radius: 8px;
+  cursor: zoom-in;
+}
+
+/* 다이어그램이 본문 폭에 맞춰 줄어들지 않도록, 넓은 화면에서는 본문을 넓힌다.
+ * VitePress 기본 스타일이 scoped 라 선택자 우선순위가 높아 !important 가 필요하다. */
+@media (min-width: 1280px) {
+  .VPDoc.has-aside .content-container {
+    max-width: none !important;
+  }
+}
+
+/* ================================================================
+ * Search — 내용 폭보다 넓혀 눈에 띄게 하고, 단축키 표시는 오른쪽 끝에 둔다.
+ * ================================================================ */
+
+@media (min-width: 768px) {
+  .VPNavBarSearch .DocSearch-Button {
+    width: 220px;
+  }
+
+  .VPNavBarSearch .DocSearch-Button-Keys {
+    margin-left: auto;
+  }
+}
+
+/* 모바일에서는 상단 내비가 스크롤과 함께 사라지므로, 검색 버튼이 늘 보이도록 위에 붙여 둔다. */
+@media (max-width: 959px) {
+  .VPNav {
+    position: sticky !important;
+    top: 0 !important;
+  }
+
+  .VPLocalNav {
+    top: var(--vp-nav-height) !important;
+  }
+}
+
+/* ================================================================
+ * 404 — lemon-ui Notice Page 패턴 (src/components/NotFound.js)
+ * ================================================================ */
+
+.LemonNotFound {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 520px;
+  min-height: calc(100vh - var(--vp-nav-height));
+  margin: 0 auto;
+  padding: 64px 32px;
+  text-align: center;
+}
+
+.LemonNotFound .icon-badge {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 64px;
+  height: 64px;
+  margin-bottom: 24px;
+  border: 1px solid rgba(240, 185, 11, 0.25);
+  border-radius: 12px;
+  background: var(--vp-c-brand-soft);
+  color: var(--vp-c-brand-1);
+}
+
+.LemonNotFound .code {
+  margin: 0 0 12px;
+  font-family: 'Galmuri11', monospace;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  color: var(--vp-c-brand-1);
+}
+
+.LemonNotFound .title {
+  margin: 0 0 12px;
+  font-family: 'Galmuri11', monospace;
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 1.3;
+  color: var(--vp-c-text-1);
+}
+
+.LemonNotFound .description {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.6;
+  color: var(--vp-c-text-2);
+  word-break: keep-all;
+}
+
+.LemonNotFound .actions {
+  margin-top: 32px;
+}
+
+.LemonNotFound .home-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 14px;
+  color: var(--vp-c-text-2);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.LemonNotFound .home-link:hover {
+  color: var(--vp-c-text-1);
+}
+
+@media (max-width: 639px) {
+  .LemonNotFound {
+    padding: 48px 20px;
+  }
+
+  .LemonNotFound .title {
+    font-size: 22px;
+  }
 }

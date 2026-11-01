@@ -1,10 +1,11 @@
 import { defineConfig } from 'vitepress'
 import { lemonHead } from '../../src/head.js'
+import { lemonConfig } from '../../src/config.js'
 
 export default defineConfig({
   title: 'Lemon Theme Demo',
   description: 'VitePress theme with LemonDouble Design System',
-  appearance: 'force-dark',
+  extends: lemonConfig,
   base: '/lemon-vitepress-theme/',
   head: [...lemonHead],
 
@@ -35,6 +36,7 @@ export default defineConfig({
       lang: 'en',
       link: '/en/',
       themeConfig: {
+        notFound: { title: 'Page not found', quote: 'The address may have changed, or the page may have been deleted.', linkText: 'Home' },
         nav: [
           { text: 'Home', link: '/en/' },
           { text: 'Guide', link: '/en/guide/getting-started' },
@@ -57,6 +59,7 @@ export default defineConfig({
       lang: 'ja',
       link: '/ja/',
       themeConfig: {
+        notFound: { title: 'ページが見つかりません', quote: 'アドレスが変更されたか、削除された可能性があります。', linkText: 'ホームへ' },
         nav: [
           { text: 'ホーム', link: '/ja/' },
           { text: 'ガイド', link: '/ja/guide/getting-started' },
@@ -79,6 +82,7 @@ export default defineConfig({
       lang: 'zh',
       link: '/zh/',
       themeConfig: {
+        notFound: { title: '找不到页面', quote: '地址可能已更改，或页面已被删除。', linkText: '返回首页' },
         nav: [
           { text: '首页', link: '/zh/' },
           { text: '指南', link: '/zh/guide/getting-started' },

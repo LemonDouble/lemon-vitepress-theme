@@ -48,7 +48,7 @@ export default defineConfig({
 | 功能 | 状态 | 备注 |
 |------|------|------|
 | 深色模式 | 启用 | 仅Force-dark |
-| Galmuri11 | 启用 | 标题、Bold 700 |
+| Galmuri11 | 启用 | 站点名称、Hero、Bold 700 |
 | Pretendard | 启用 | 正文、代码、按钮 |
 
 ## 引用

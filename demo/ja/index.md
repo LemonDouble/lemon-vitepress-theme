@@ -4,7 +4,7 @@ layout: home
 hero:
   name: "Lemon Theme"
   text: "VitePress デザインシステム"
-  tagline: Galmuri11見出しとPretendard本文の暖かいダークテーマ
+  tagline: Galmuri11ブランドタイトルとPretendard本文の暖かいダークテーマ
   actions:
     - theme: brand
       text: はじめる
@@ -17,7 +17,7 @@ features:
   - title: ダークモード専用
     details: ブランドロゴから抽出した暖かいダーク背景 (#12100E)。ピュアブラックなし、ライトモードなし。
   - title: デュアルフォントシステム
-    details: Galmuri11 Boldで8-bitレトロ見出し、Pretendardでクリーンな本文。
+    details: Galmuri11 Boldで8-bitレトロなサイト名、Pretendardで読みやすい見出しと本文。
   - title: ブランドカラー
     details: ゴールデンイエロー (#F0B90B) CTA/リンク。コーラルレッド (#CD6B5E) セカンダリアクセント。
   - title: ドロップインテーマ

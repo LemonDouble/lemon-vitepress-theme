@@ -36,7 +36,7 @@ That's it. Two files, and your docs site has the LemonDouble design system appli
 ## What's Included
 
 - **Colors** — Brand yellow, coral red, warm dark background, semantic colors
-- **Fonts** — Galmuri11 Bold for headings, Pretendard for body/code
+- **Fonts** — Galmuri11 Bold for the site title and hero, Pretendard for headings and body
 - **Components** — Styled buttons, badges, code blocks, custom blocks, tables
 - **Nav** — Glass-effect navigation bar (56px height)
 

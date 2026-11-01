@@ -48,7 +48,7 @@ export default defineConfig({
 | 機能 | 状態 | 備考 |
 |------|------|------|
 | ダークモード | 有効 | Force-dark専用 |
-| Galmuri11 | 有効 | 見出し、Bold 700 |
+| Galmuri11 | 有効 | サイト名、ヒーロー、Bold 700 |
 | Pretendard | 有効 | 本文、コード、ボタン |
 
 ## 引用
